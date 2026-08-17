@@ -6,7 +6,9 @@ having trouble recognizing a cartoon?? fear not! the toontector is here to help 
 
 ## The Algorithm
 
-Add an explanation of the algorithm and how it works. Make sure to include details about how the code works, what it depends on, and any other relevant info. Add images or other descriptions for your project here. 
+### Dataset
+This is the original Kaggle cartoon [dataset] (https://www.kaggle.com/datasets/kanakmittal/anime-and-cartoon-image-classification). I narrowed it down to 5 cartoons: invader zim, spongebob, phineas and ferb, animaniacs, powerpuff girls. I also ran a python script to split the images into test, train, and val folders.
+
 
 ## Training Process
 - `cd ~/jetson-inference/`
