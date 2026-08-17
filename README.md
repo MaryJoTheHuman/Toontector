@@ -2,7 +2,7 @@
 
 having trouble recognizing a cartoon?? fear not! the toontector is here to help you know which cartoon is which!!
 
-![add image descrition here](direct image link here)
+<img width="318" height="159" alt="zimtest2" src="https://github.com/user-attachments/assets/4c222335-bbdd-447c-8cae-e33fb75dbe28" />
 
 ## The Algorithm
 This project uses the ImageNet classification program from the Jetson Inference library on the NVIDIA Jetson Orin Nano. To install Jetson Inference, follow the [Jetson Inference build instructions](https://github.com/dusty-nv/jetson-inference/blob/master/docs/building-repo-2.md).I retrained the ResNet-18 model on a cartoon dataset and used ImageNet to process images.
