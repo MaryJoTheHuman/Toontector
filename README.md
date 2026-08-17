@@ -21,8 +21,35 @@ Inside of the docker container:
 - `python3 onnx_export.py --model-dir=models/toon_model 
 Exit the Docker container (CTRL + D)
 
-## Running this project
-1. Add steps for running this project.
-2. Make sure to include any required libraries that need to be installed for your project to run.
 
-[View a video explanation here](video link)
+## Running this project
+1. Clone the project repository.
+`git clone https://github.com/MaryJoTheHuman/Toontector.git`
+2. Change into the project folder.
+`cd Toontector`
+
+3. Set the NET and DATASET variables
+`NET=model/toon_model`
+`DATASET=data/new_cartoon_dataset`
+4. Test on any image in the test folder
+`imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/CLASS_FOLDER/CLASS_IMG.EXT output/OUTPUT.jpg`
+Replace CLASS_FOLDER with the name of the class (ex. Spongebob)
+Replace CLASS_IMG.EXT with the image file name (ex. 101.png)
+Replace OUTPUT.jpg with your desired output image name
+
+## Running this project
+1. Clone the project repository.
+`git clone https://github.com/MaryJoTheHuman/Toontector.git`
+2. Change into the project folder.
+`cd Toontector`
+
+3. Set the NET and DATASET variables
+`NET=model/toon_model`
+`DATASET=data/new_cartoon_dataset`
+4. Test on any image in the test folder
+`imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/CLASS_FOLDER/CLASS_IMG.EXT output/OUTPUT.jpg`
+Replace CLASS_FOLDER with the name of the class (ex. Spongebob)
+Replace CLASS_IMG.EXT with the image file name (ex. 101.png)
+Replace OUTPUT.jpg with your desired output image name
+
+[video demo] (https://drive.google.com/file/d/1n362H6FGQUJm4pMa-pHAuGTjZWjTDvSE/view?usp=sharing)
